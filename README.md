@@ -51,3 +51,9 @@ The workflow utilizes a robust mix of parallel processing and sequential depende
                                │
                                ▼
                      [ 🌐 INDEX.HTML ] (Standalone Interactive Dashboard)
+
+
+## 📊 Live Dashboard Preview
+![Financial Autopilot Dashboard](Screenshot_Index html.png)
+<img width="657" height="938" alt="Screenshot_Index html" src="https://github.com/user-attachments/assets/ff28b640-9b5e-4530-a610-daff15ce999b" />
+
