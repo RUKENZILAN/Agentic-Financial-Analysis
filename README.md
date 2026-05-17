@@ -54,6 +54,6 @@ The workflow utilizes a robust mix of parallel processing and sequential depende
 
 
 ## 📊 Live Dashboard Preview
-![Financial Autopilot Dashboard](Screenshot_Index html.png)
-<img width="657" height="938" alt="Screenshot_Index html" src="https://github.com/user-attachments/assets/ff28b640-9b5e-4530-a610-daff15ce999b" />
+![Financial Autopilot Dashboard]
+<img width="657" height="938" alt="Screenshot_Index html" src="https://github.com/user-attachments/assets/7773c344-0016-4ccb-8ce2-a91b67f6b3ed" />
 
