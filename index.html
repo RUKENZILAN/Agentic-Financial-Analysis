@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity Financial Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="background-gradients">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <div class="dashboard-container">
+        <header>
+            <div class="logo">Antigravity <span>AI</span></div>
+            <h1>Executive Summary Dashboard</h1>
+            <p class="subtitle">Real-time consolidated financial insights.</p>
+        </header>
+
+        <main class="grid-layout">
+            <!-- Executive Metrics Card -->
+            <section class="glass-card metric-card">
+                <h2>Financial Health</h2>
+                <div class="score-container">
+                    <svg class="progress-ring" width="120" height="120">
+                        <circle class="progress-ring__circle bg" stroke="rgba(255,255,255,0.1)" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                        <circle id="healthScoreCircle" class="progress-ring__circle" stroke="#4ade80" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                    </svg>
+                    <div class="score-text">
+                        <span id="healthScoreValue">--</span>
+                        <span class="out-of">/10</span>
+                    </div>
+                </div>
+                <div class="status-badge" id="healthStatus">Evaluating...</div>
+                
+                <div class="metric-row" style="margin-top: 2rem; width: 100%;">
+                    <span class="label">Altman Z-Score</span>
+                    <span class="value" id="zScoreValue">--</span>
+                </div>
+                <div class="metric-row" style="width: 100%;">
+                    <span class="label">Cash Runway</span>
+                    <span class="value" id="cashRunwayValue">--</span>
+                </div>
+                <div class="metric-row" style="width: 100%;">
+                    <span class="label">Return on Equity</span>
+                    <span class="value" id="roeValue">--</span>
+                </div>
+            </section>
+
+            <!-- Ratio Analytics & DuPont -->
+            <section class="glass-card ratios-card col-span-2">
+                <h2>Ratio Analytics & DuPont Pillars</h2>
+                
+                <h3 style="color: var(--text-secondary); margin: 1rem 0 0.5rem; font-size: 0.9rem; text-transform: uppercase;">Ratio Analytics</h3>
+                <div class="metric-grid" id="ratioAnalyticsGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
+                    <!-- Populated by JS -->
+                </div>
+
+                <h3 style="color: var(--text-secondary); margin: 1.5rem 0 0.5rem; font-size: 0.9rem; text-transform: uppercase;">DuPont Pillars</h3>
+                <div class="metric-grid" id="dupontGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
+                    <!-- Populated by JS -->
+                </div>
+            </section>
+
+            <!-- Budget Simulations (Chart) -->
+            <section class="glass-card chart-card col-span-2">
+                <h2>Budget Simulations & Forecasts</h2>
+                <div style="position: relative; height: 300px; width: 100%; margin-bottom: 1.5rem;">
+                    <canvas id="cashFlowChart"></canvas>
+                </div>
+                <h3 style="color: var(--text-secondary); margin: 1rem 0 0.5rem; font-size: 0.9rem; text-transform: uppercase;">Cost Cutting Savings Plans</h3>
+                <div class="metric-grid" id="savingsGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
+                    <!-- Populated by JS -->
+                </div>
+            </section>
+
+            <!-- Strategic Narrative: Action Plan -->
+            <section class="glass-card action-card col-span-2">
+                <h2>🚀 Strategic Action Plan</h2>
+                <ul id="actionPlanList" class="narrative-list">
+                    <!-- Populated by JS -->
+                </ul>
+            </section>
+
+            <!-- Green Flags -->
+            <section class="glass-card flags-card green-flags">
+                <h2><span class="icon">✅</span> Opportunities & Growth</h2>
+                <ul id="greenFlagsList">
+                    <!-- Populated by JS -->
+                </ul>
+            </section>
+
+            <!-- Red Flags -->
+            <section class="glass-card flags-card red-flags">
+                <h2><span class="icon">⚠️</span> Critical Risks</h2>
+                <ul id="redFlagsList">
+                    <!-- Populated by JS -->
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <!-- Data generated by Python UI/UX Agent -->
+    <script src="dashboard_data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
